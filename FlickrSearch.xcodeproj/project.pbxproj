@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D457CA82461583D00F071C2 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D457CA62461583D00F071C2 /* PhotoCell.swift */; };
+		8D457CA92461583D00F071C2 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D457CA72461583D00F071C2 /* PhotoCell.xib */; };
+		8D457CAB24615ED300F071C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D457CAA24615ED300F071C2 /* ViewController.swift */; };
 		8D86E01C2460A8930017BE46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86E01B2460A8930017BE46 /* AppDelegate.swift */; };
 		8D86E01E2460A8930017BE46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86E01D2460A8930017BE46 /* SceneDelegate.swift */; };
 		8D86E0232460A8930017BE46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D86E0212460A8930017BE46 /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D457CA62461583D00F071C2 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		8D457CA72461583D00F071C2 /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		8D457CAA24615ED300F071C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8D86E0182460A8930017BE46 /* FlickrSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D86E01B2460A8930017BE46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D86E01D2460A8930017BE46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +53,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D457CAC24615EE100F071C2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				8D457CAA24615ED300F071C2 /* ViewController.swift */,
+				8D457CA62461583D00F071C2 /* PhotoCell.swift */,
+				8D457CA72461583D00F071C2 /* PhotoCell.xib */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		8D86E00F2460A8930017BE46 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +91,7 @@
 				8D86E035246138220017BE46 /* FlickrSearchResults.swift */,
 				8D86E037246138560017BE46 /* Result.swift */,
 				8D86E0212460A8930017BE46 /* Main.storyboard */,
+				8D457CAC24615EE100F071C2 /* Test */,
 				8D86E0242460A8940017BE46 /* Assets.xcassets */,
 				8D86E0262460A8940017BE46 /* LaunchScreen.storyboard */,
 				8D86E0292460A8940017BE46 /* Info.plist */,
@@ -140,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D457CA92461583D00F071C2 /* PhotoCell.xib in Resources */,
 				8D86E0282460A8940017BE46 /* LaunchScreen.storyboard in Resources */,
 				8D86E0252460A8940017BE46 /* Assets.xcassets in Resources */,
 				8D86E0232460A8930017BE46 /* Main.storyboard in Resources */,
@@ -153,7 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D457CAB24615ED300F071C2 /* ViewController.swift in Sources */,
 				8D86E0302460B0DA0017BE46 /* FlickrPhotosViewController.swift in Sources */,
+				8D457CA82461583D00F071C2 /* PhotoCell.swift in Sources */,
 				8D86E036246138220017BE46 /* FlickrSearchResults.swift in Sources */,
 				8D86E01C2460A8930017BE46 /* AppDelegate.swift in Sources */,
 				8D86E0322460BCB70017BE46 /* Flickr.swift in Sources */,
@@ -314,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nesanoff.FlickrSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -332,7 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nesanoff.FlickrSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
